@@ -1,0 +1,119 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+#container {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#calulator {
+  max-width: 500px;
+  background-color: hsl(85, 11%, 11%);
+}
+
+#display {
+  width: 99%;
+  padding: 25px;
+  font-size: 3rem;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: right;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: hsl(100, 4%, 12%);
+  border: none;
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 40px;
+  margin: 0;
+}
+
+button {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: hsl(100, 4%, 13%);
+}
+
+button:hover {
+  background-color: hsl(100, 4%, 15%);
+}
+
+button:active {
+  background-color: hsl(100, 4%, 20%);
+}
+
+.operator-button {
+  background-color: hsl(100, 2%, 18%);
+}
+
+.operator-button:active {
+  background-color: hsl(90, 4%, 25%);
+}
+
+.operator-button-equal {
+  background-color: hsl(207, 64%, 48%);
+}
+
+.operator-button-equal:hover {
+  background-color: hsl(207, 64%, 54%);
+}
